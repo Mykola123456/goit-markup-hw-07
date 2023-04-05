@@ -44,11 +44,10 @@ button, btn {
 }
 
 .container {
-        width: 1158px;
+
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto;
-        /* outline: 2px solid red; */
+       
 
 
 }
@@ -227,11 +226,16 @@ border-bottom: 1px solid #E7E9FC;
 
 /* секція 1 --студія-----------------------------------------*/
 .title {
-        width: 496px;
-        font-size: 56px;
-        line-height: 1.07;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 0.9;
         
+                
+
+        text-align: center;
         letter-spacing: 0.02em;
+        text-transform: capitalize;
         color: #FFFFFF;
         margin: 0 auto;
         
@@ -240,8 +244,8 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .hero-title {
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding-top: 112px;
+        padding-bottom: 112px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -263,7 +267,7 @@ border-bottom: 1px solid #E7E9FC;
         display: block;
         margin: 0 auto;
         padding: 16px 32px;
-        margin-top: 48px;
+        margin-top: 72px;
 
         
 }
@@ -339,12 +343,12 @@ border-bottom: 1px solid #E7E9FC;
 
 .hero {
 
-        max-width: 1440px;
-        padding: auto;
-        margin:0 auto;
+        max-width: 100%;
+        
+       
       
         background: var(--second-title-color);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -441,7 +445,7 @@ border-bottom: 1px solid #E7E9FC;
 /* секція 2 --------студія----------------------------------- */
 
 
-.about-icon {
+/* .about-icon {
        
         width: 64px;
         height: 64px;
@@ -452,14 +456,15 @@ border-bottom: 1px solid #E7E9FC;
         text-align: center;
         background: #F4F4FD;
         border-radius: 4px;
-}
+} */
 .about {
         padding-top: 120px;
         
 }
 .about-text {
-        display: flex;
-        gap: 24px;
+        
+        /* display: flex;
+        gap: 24px; */
         
 
         
@@ -471,23 +476,29 @@ border-bottom: 1px solid #E7E9FC;
 
 .title-about {
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
         letter-spacing: 0.02em;
-        color: var(--second-title-color);
+        text-transform: capitalize;
+        color: #2E2F42;
+        
         margin-bottom: 8px;
 
         
 }
 
 .title-text {
-        
-        
+       
+        font-weight: 500;
+        font-style: normal;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--adres-title-color);
+        margin-bottom: 72px;
+       
         
 }
 .list {
