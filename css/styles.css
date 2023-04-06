@@ -43,14 +43,7 @@ button, btn {
         cursor: pointer;
 }
 
-.container {
 
-        padding-left: 15px;
-        padding-right: 15px;
-       
-
-
-}
 
 /* логотип ----------------------------------------------------------*/
 .logo {
@@ -64,7 +57,7 @@ button, btn {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
-        margin-right: 76px;
+       
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         transition: var(--speed-transform);
 }
@@ -93,7 +86,7 @@ button, btn {
 }
 
 .header-list {
-        display: flex;
+       display: none;
         gap: 40px;
 }
 
@@ -106,7 +99,8 @@ button, btn {
         text-decoration: none;
 }
 .header {
-       
+        padding-top: 24px;
+                padding-bottom: 22px;
 border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
         
@@ -115,8 +109,22 @@ border-bottom: 1px solid #E7E9FC;
 .header-nav {
        display: flex;
        align-items: center;
-       padding-top: 24px;
-       padding-bottom: 24px;
+       
+}
+
+.header-mob {
+
+}
+.header-mob-icon {
+        width: 32px;
+        height: 22px;
+        stroke: #2e2f42;
+}
+.mob-menu-open {
+        background-color: transparent;
+                border: none;
+                padding: 0;
+                line-height: 0;
 }
 .header-link-top {
         color: #404BBF;
@@ -200,6 +208,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .address-mail {
+        display: none;
         font-family: var(--paragraph-title-font-family);
         font-weight: 400;
         font-size: 16px;
@@ -225,31 +234,58 @@ border-bottom: 1px solid #E7E9FC;
 
 
 /* секція 1 --студія-----------------------------------------*/
-.title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 0.9;
-        
-                
+.container {
 
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #FFFFFF;
-        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+
+
+}
+.title {
+        max-width: 320px;
+                margin-right: auto;
+                
+                margin-left: auto;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.11;
+                text-align: center;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+                color: #ffffff;
         
         
         
 }
 
-.hero-title {
+.hero {
+
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 112px;
         padding-bottom: 112px;
+                
+
+
+
+        background: var(--second-title-color);
+        border-image: url(../images/hero-image-mob-2.jpg);
+        /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         text-align: center;
+}
+
+.hero-title {
+        
+        /* text-align: center;
         margin-left: auto;
         margin-right: auto;
-        max-width: 2560px;
+        max-width: 2560px; */
 }
 
 /* кнопки ---------------------------------------------*/
@@ -262,7 +298,7 @@ border-bottom: 1px solid #E7E9FC;
         letter-spacing: 0.04em;
         color: #FFFFFF;
         background: #4D5AE5;
-      border: transparent;
+        border: transparent;
         border-radius: 4px;
         display: block;
         margin: 0 auto;
@@ -334,24 +370,6 @@ border-bottom: 1px solid #E7E9FC;
 
 .hero-none {
         padding-top: 96px;
-}
-
-
-
-/* hero ----студія---------------------------------*/
-
-
-.hero {
-
-        max-width: 100%;
-        
-       
-      
-        background: var(--second-title-color);
-        /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
 }
 
 
@@ -445,20 +463,22 @@ border-bottom: 1px solid #E7E9FC;
 /* секція 2 --------студія----------------------------------- */
 
 
-/* .about-icon {
+.about-icon {
        
         width: 64px;
         height: 64px;
 }
 .about-fon {
+        display: none;
         padding: 24px 100px;
         margin-bottom: 8px;
         text-align: center;
         background: #F4F4FD;
         border-radius: 4px;
-} */
+}
 .about {
-        padding-top: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
         
 }
 .about-text {
@@ -597,7 +617,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .team-item {
-        display: flex;
+        display: block;
         gap: 24px;
         padding-bottom: 120px;
         
