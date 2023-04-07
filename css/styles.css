@@ -272,8 +272,8 @@ border-bottom: 1px solid #E7E9FC;
 
 
         background: var(--second-title-color);
-        border-image: url(../images/hero-image-mob-2.jpg);
-        /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
+        
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -510,6 +510,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .title-text {
+       max-width: 320px;
        
         font-weight: 500;
         font-style: normal;
@@ -563,6 +564,10 @@ border-bottom: 1px solid #E7E9FC;
         
         
 }
+.team > .container {
+max-width: 294px;
+
+}
 
 .team-soc-list {
         display: flex;
@@ -611,16 +616,23 @@ border-bottom: 1px solid #E7E9FC;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
-        padding-top: 120px;
+        padding-top: 96px;
         margin-bottom: 72px;
         
 }
 
 .team-item {
-        display: block;
-        gap: 24px;
-        padding-bottom: 120px;
-        
+        display: flex;
+        flex-wrap: wrap;
+       
+        padding-bottom: 96px;
+       
+}
+.container {
+        margin: 0 auto;
+}
+.container > .team-item {
+        gap: 72px;
 }
 
 .team-name {
@@ -669,10 +681,11 @@ padding: 32px 16px;
 /* секція 5-------------------------------------------------------- */
 
 .customers {
-        padding-bottom: 120px;
+        padding-bottom: 96px;
+        
 }
 .team-title {
-        padding-top: 130px;
+       
 
 
 }
@@ -681,8 +694,10 @@ padding: 32px 16px;
 
 .company-list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 16px;
+        row-gap: 72px;
 }
 
 .company-item {
@@ -735,31 +750,11 @@ padding: 32px 16px;
 
 /* футер -----------------------------------------------------------*/
 
-.logo {
-        font-style: normal;
-        font-weight: 800;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        line-height: 1.17;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4D5AE5;
-        
-}
+
 
 
 .footer-logo {
-        font-style: normal;
-        font-weight: 800;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        line-height: 1.17;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+        
         color: #f4f4fd;
         
 }
@@ -780,27 +775,35 @@ padding: 32px 16px;
 }
 .footer {
 background: var(--second-title-color);
-display: flex;
-padding-top: 100px;
-padding-bottom: 100px;
+
+padding-top: 96px;
+padding-bottom: 96px;
 
 
 }
 .footer-web-icon {
         display: flex;
+                flex-direction: column;
+                gap: 72px;
+                align-items: center;
         
 }
 
 .footer-container {
 
-
+display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
 
 }
 
 .footer-soc {
 
-margin-left: 120px;
-
+display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
 
 
 }
@@ -849,7 +852,11 @@ margin-left: 120px;
 }
 
 .form-footer {
-      display: flex;
+width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
 }
 
 .footer-soc-icon {
@@ -907,8 +914,12 @@ margin-left: 120px;
         background: #31D0AA;
 }
 .button-type {
-    display: block;
-        margin-left: 80px;
+width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 398px;
 }
 
 .footer-button {
