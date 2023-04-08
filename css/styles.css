@@ -696,8 +696,7 @@ padding: 32px 16px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 72px;
+       gap: 72px 16px;
 }
 
 .company-item {
@@ -783,6 +782,7 @@ padding-bottom: 96px;
 }
 .footer-web-icon {
         display: flex;
+     
                 flex-direction: column;
                 gap: 72px;
                 align-items: center;
@@ -969,6 +969,7 @@ width: 100%;
         background-color: rgba(46, 47, 66, 0.4);
         transition: opacity 250ms linear, visibility 250ms linear;
 }
+
 
 .modal {
         width: 408px;
