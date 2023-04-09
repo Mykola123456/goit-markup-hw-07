@@ -58,7 +58,7 @@ button, btn {
         text-transform: uppercase;
         color: #4D5AE5;
        
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
         transition: var(--speed-transform);
 }
 
@@ -86,7 +86,8 @@ button, btn {
 }
 
 .header-list {
-       display: none;
+        margin-left: 120px;
+       display: flex;
         gap: 40px;
 }
 
@@ -100,7 +101,7 @@ button, btn {
 }
 .header {
         padding-top: 24px;
-                padding-bottom: 22px;
+                padding-bottom: 24px;
 border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
         
@@ -122,9 +123,9 @@ border-bottom: 1px solid #E7E9FC;
 }
 .mob-menu-open {
         background-color: transparent;
-                border: none;
-                padding: 0;
-                line-height: 0;
+        border: none;
+        padding: 0;
+        line-height: 0;
 }
 .header-link-top {
         color: #404BBF;
@@ -235,15 +236,17 @@ border-bottom: 1px solid #E7E9FC;
 
 /* секція 1 --студія-----------------------------------------*/
 .container {
-
+       
         padding-left: 15px;
         padding-right: 15px;
 
 
 
 }
+
+
 .title {
-        max-width: 320px;
+        
                 margin-right: auto;
                 
                 margin-left: auto;
@@ -262,7 +265,7 @@ border-bottom: 1px solid #E7E9FC;
 
 .hero {
 
-        max-width: 1440px;
+        max-width: 428px;
         margin-right: auto;
         margin-left: auto;
         padding-top: 112px;
@@ -483,15 +486,19 @@ border-bottom: 1px solid #E7E9FC;
 }
 .about-text {
         
-        /* display: flex;
-        gap: 24px; */
+        display: flex;
+                flex-direction: column;
+                gap: 72px;
+        }
         
 
         
         
 }
 .about-list {
-        
+   width: 100%;
+       
+       
 }
 
 .title-about {
@@ -510,7 +517,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .title-text {
-       max-width: 320px;
+       
        
         font-weight: 500;
         font-style: normal;
@@ -518,7 +525,7 @@ border-bottom: 1px solid #E7E9FC;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--adres-title-color);
-        margin-bottom: 72px;
+       
        
         
 }
@@ -564,13 +571,13 @@ border-bottom: 1px solid #E7E9FC;
         
         
 }
-.team > .container {
-max-width: 294px;
 
-}
+
+
 
 .team-soc-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 24px;
         margin-top: 8px;
@@ -624,16 +631,15 @@ max-width: 294px;
 .team-item {
         display: flex;
         flex-wrap: wrap;
-       
+        gap: 72px 24px;
         padding-bottom: 96px;
+        justify-content: center;
        
 }
 .container {
         margin: 0 auto;
 }
-.container > .team-item {
-        gap: 72px;
-}
+
 
 .team-name {
 padding: 32px 16px;
@@ -794,7 +800,7 @@ padding-bottom: 96px;
 display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 16px;
+       
 
 }
 
@@ -803,8 +809,7 @@ display: flex;
 display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 16px;
-
+       
 
 }
 
@@ -823,6 +828,7 @@ display: flex;
 
 .footer-soc-list {
         display: inline-flex;
+        flex-wrap: wrap;
         gap: 16px;
 }
 
@@ -857,6 +863,7 @@ width: 100%;
         flex-direction: column;
         gap: 24px;
         align-items: center;
+        justify-content: center;
 }
 
 .footer-soc-icon {
@@ -886,7 +893,7 @@ width: 100%;
        display: flex;
         align-items: center;
         letter-spacing: 0.04em;
-        margin-right: 24px;
+        
 }
 .subscribe-box {
 
@@ -914,12 +921,12 @@ width: 100%;
         background: #31D0AA;
 }
 .button-type {
-width: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 16px;
-        max-width: 398px;
+        
+ 
 }
 
 .footer-button {
@@ -1203,6 +1210,79 @@ margin-top: 24px;
         
 
         
-               
+    @media screen and (min-width: 480px) {
+        .container {
+       width: 428px;
+        
+        }
+    } 
+       
+     @media screen and (min-width: 768px) {
+        .container {
+        width: 766px;
+             }
+     }
+      @media screen and (min-width: 768px) {
+              .hero {
+                max-width: 768px;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-top: 112px;
+                        padding-bottom: 112px;
+                background: var(--second-title-color);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-1.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        text-align: center;
+              }
+      }
+      @media screen and (min-width: 768px) {
+              .title {
+                max-width: 496px;
+                        margin: 0 auto 36px auto;
+                        font-size: 56px;
+                        line-height: 1.07;
+                        letter-spacing: 0.02em;
+              }
+      }
+     @media screen and (min-width: 768px) {
+             .about-list {
+                width: calc((100% - 24px) / 2);
+             }
+     }
+      @media screen and (min-width: 768px) {
+        .about-text {
+                display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        column-gap: 24px;
+                        row-gap: 72px;
+                }
+              }
+              
+   @media screen and (min-width: 768px) {
+           .team-item {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 64px 24px;
+                        padding-bottom: 96px;
+                        justify-content: center;
+           }
+   }
+   @media screen and (min-width: 768px) {
+           .company-item {
+                height: 88px;
+                        width: 168px;
+           }
+   }
+   @media screen and (min-width: 768px) {
+           .company-list {
+                justify-content: center;
+                        gap: 72px 24px;
+           }
+   }
+     
+              
         
         
