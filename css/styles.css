@@ -976,7 +976,7 @@ display: flex;
 
 
 .modal {
-        width: 408px;
+        width: 392px;
        max-height: 584px;
         left: 516px;
         
@@ -1339,6 +1339,9 @@ margin-top: 24px;
                 width: 264px;
                 margin-right: 24px;
                 }
+        .modal {
+                width: 408px;
+        }
      }
      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -1348,7 +1351,12 @@ margin-top: 24px;
                 }
       }
        
-      
+      /*------------------1158----------------------  */
+      @media screen and (min-width: 1200px) {
+        .container {
+                width: 1158px;
+        }
+      }
       
     
       
