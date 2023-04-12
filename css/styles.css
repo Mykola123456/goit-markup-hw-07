@@ -437,19 +437,10 @@ border-bottom: 1px solid #E7E9FC;
 /* секція 2 --------студія----------------------------------- */
 
 
-.about-icon {
-       
-        width: 64px;
-        height: 64px;
-}
 .about-fon {
         display: none;
-        padding: 24px 100px;
-        margin-bottom: 8px;
-        text-align: center;
-        background: #F4F4FD;
-        border-radius: 4px;
 }
+
 .about {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -465,7 +456,7 @@ border-bottom: 1px solid #E7E9FC;
 
         
         
-}
+
 .about-list {
    width: 100%;
        
@@ -481,7 +472,6 @@ border-bottom: 1px solid #E7E9FC;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
-        
         margin-bottom: 8px;
 
         
@@ -505,32 +495,11 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 /* секція  3 -----студія-------------------------------------------*/
-
-
 .programs {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        
-}
-.programs-title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #2E2F42;
-        margin-bottom: 72px;
-        
+        display: none;
 }
 
 
-
-.programs-item {
-        display: flex;
-        gap: 24px;
-}
 
 
 /* секція  4 -------студія-----------------------------------*/
@@ -1189,7 +1158,7 @@ margin-top: 24px;
         .container {
                 width: 426px;
                 }
-    } 
+        } 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1199,9 +1168,13 @@ margin-top: 24px;
                 }
     } 
     @media screen and (max-width: 767px) {
-                .subscribe-tittle {
+        
+        .address-mail {
+                display: none;
+        }
+        .subscribe-tittle {
                 text-align: center; 
-                }
+        }
         .subscribe-box {
                 width: 100%;
                 margin-bottom: 16px;
@@ -1209,7 +1182,7 @@ margin-top: 24px;
         .footer-container {
                 align-items: center;
                 justify-content: center;
-                }
+        }
         .footer-soc {
                 align-items: center;
         }
@@ -1230,25 +1203,25 @@ margin-top: 24px;
      @media screen and (min-width: 768px) {
         .container {
                 width: 766px;
-             }
+        }
         .mob-menu-open {
                 display: none;
-                }
+        }
         .header-list {
                 margin-left: 120px;
                 display: flex;
                 gap: 40px;
-                }
+        }
         .address-list {
                 display: block;
-                 }
+        }
         .address-mail {
                 display: block;
                 color: #434455;
                 font-size: 12px;
                 line-height: calc(14/12);
                 letter-spacing: 0.04em;
-                }
+        }
         .mail {
                 margin-bottom: 12px;
         
@@ -1276,13 +1249,17 @@ margin-top: 24px;
         .about-list {
                 width: calc((100% - 24px) / 2);
                 }
+                
         .about-text {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 column-gap: 24px;
                 row-gap: 72px;
+        
                 }
+        
+
         .team-item {
                 display: flex;
                 flex-wrap: wrap;
@@ -1294,6 +1271,8 @@ margin-top: 24px;
                 height: 88px;
                 width: 168px;
                 }
+        
+        }        
         .company-list {
                 justify-content: center;
                 gap: 72px 24px;
@@ -1320,13 +1299,14 @@ margin-top: 24px;
         .modal {
                 width: 408px;
         }
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        .hero {
-                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tab-2.jpg);
-                        }
-                }
+        
+     
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+             .hero {
+                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tab-2.jpg);
+             }
      }
     
        
@@ -1362,7 +1342,42 @@ margin-top: 24px;
                 }
         .mail {
                 margin-bottom: 0;
-        }  
+        }
+        .title-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: #434455;
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+        }
+        .title-about {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #2E2F42;
+        }
+        .about-text {
+                flex-wrap: nowrap;
+                gap: 24px;
+                }
+        .about-icon {
+                
+                width: 64px;
+                height: 64px;
+        }
+        .about-fon {
+                display: flex;
+                padding: 24px 100px;
+                margin-bottom: 8px;
+                text-align: center;
+                background: #F4F4FD;
+                border-radius: 4px;
+        }
+                
         .hero {
                 max-width: 1200px;
                 margin-right: auto;
@@ -1370,17 +1385,41 @@ margin-top: 24px;
                 padding-top: 112px;
                 padding-bottom: 112px;
                 background: var(--second-title-color);
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-desk-1.jpg);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 text-align: center;
                 }
+        .programs {
+                display: flex;
+                padding-top: 120px;
+                padding-bottom: 120px;
+                
+                }
+                
+        .programs-title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.11;
+                text-align: center;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+                color: #2E2F42;
+                margin-bottom: 72px;
+                
+                }
+                
+        .programs-item {
+                display: flex;
+                gap: 24px;
+                }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .hero {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-desk-2.jpg);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2.jpg);
                                         }
                                 }
       }
