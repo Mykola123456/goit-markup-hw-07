@@ -55,11 +55,76 @@
             </li>
           </ul>
         </address>
-        <button class="mob-menu-open" type="button">
-          <svg class="header-mob-icon">
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="menu-mob-icon">
             <use href="./images/icons.svg#icon-charm-menu-hamburger-mob"></use>
           </svg>
         </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-modal-close" data-menu-close type="button">
+          <svg class="close">
+            <use
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="menu-mail-list list">
+            <li class="mob-menu-tel">
+              <a class="menu-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-menu-mail">
+              <a class="menu-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -145,6 +210,7 @@
           <ul class="programs-item list">
             <li class="programs-list">
               <img
+                srcset="./images/img-1.jpg 1x, ./images/rectangle-1-min.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="gadgets"
                 width="360"
@@ -153,6 +219,7 @@
             </li>
             <li class="programs-list">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/rectangle-2-min.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="gadgets"
                 width="360"
@@ -161,6 +228,7 @@
             </li>
             <li class="programs-list">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/rectangle-3-min.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="gadgets"
                 width="360"
