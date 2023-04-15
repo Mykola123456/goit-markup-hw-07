@@ -1047,8 +1047,9 @@ padding-bottom: 96px;
 
 
 .modal {
-        width: 392px;
-       max-height: 584px;
+        max-width: 392px;
+        width: calc(100% - 36px);
+        
         left: 516px;
         
         background: #FCFCFC;
@@ -1302,6 +1303,10 @@ margin-top: 24px;
         .menu-open-btn {
                 display: none;
         }
+        .header {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                }
         .header-list {
                 margin-left: 120px;
                 display: flex;
@@ -1343,7 +1348,7 @@ margin-top: 24px;
         }
         .title {
                  max-width: 496px;
-                margin: 0 auto 36px auto;
+             
                 font-size: 56px;
                 line-height: 1.07;
                 letter-spacing: 0.02em;
@@ -1426,10 +1431,11 @@ margin-top: 24px;
     
        
       /*------------------1158----------------------  */
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1158px) {
         .container {
-                width: 1158px;
+                width: 1156px;
         }
+        
         .address-list {
                 align-items: center;
                 display: flex;
@@ -1455,6 +1461,9 @@ margin-top: 24px;
                 color: var(--adres-title-color);
                 transition: var(--speed-transform);
                 }
+        .address-list {
+               
+        }
         .mail {
                 margin-bottom: 0;
         }
@@ -1518,6 +1527,7 @@ margin-top: 24px;
                 }
         }
         .team-item {
+                flex-wrap: nowrap;
                 padding-bottom: 120px;
         }
         .programs {
@@ -1539,6 +1549,9 @@ margin-top: 24px;
                 margin-bottom: 72px;
                 
                 }
+        .company-list {
+                flex-wrap: nowrap;
+        }
         .footer {
                
                 padding-top:100px;
